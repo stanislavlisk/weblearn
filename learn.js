@@ -1,8 +1,3 @@
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
-
 
 
 var MyRGB = {
@@ -46,12 +41,3 @@ function changeDomRGB(color, incr) {
 
 
 }
-
-
-//console.log('rgb(' + merged + ')');
-
-
-
-
-//document.getElementById("demo").innerHTML = "Paragraph changed.";
-//document.getElementById("colchange").style.backgroundColor = 'rgb(10, 200, 71)';
