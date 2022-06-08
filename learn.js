@@ -10,12 +10,25 @@ var MyRGB = {
 
 function changeMyRgb(color, incr) {
   let colorRate = 10;
+  let tmpobj = {};
+  Object.assign(tmpobj,MyRGB);
+
   if (incr === 'add') {
-    MyRGB[color] += colorRate;
-    console.log('add');
+    tmpobj[color] += colorRate;
+    if (tmpobj[color] > 255) {
+      tmpobj[color] = 255;
+      return tmpobj;
+    }
+    return tmpobj;
+
   } else if (incr ==='sub') {
-    MyRGB[color] -= colorRate;
-    console.log('sub');
+    tmpobj[color] -= colorRate;
+    if (tmpobj[color] < 0) {
+      tmpobj[color] = 0;
+      return tmpobj;
+    }
+    return tmpobj;
+
   } else {
     console.log('some error');
   }
@@ -30,14 +43,14 @@ function myObjtoRGB(myObj) {
   console.log(newRGB);
   return newRGB;
 }
-console.log(myObjtoRGB(MyRGB));
 //////////////////
 
 function changeDomRGB(color, incr) {
-  changeMyRgb(color, incr);
-  let domRgb = myObjtoRGB(MyRGB);
+  let tmpobj = changeMyRgb(color, incr);
+  let domRgb = myObjtoRGB(tmpobj);
   document.getElementById("colchange").style.backgroundColor = 'rgb(' + domRgb + ')';
   document.getElementById("demo").innerHTML = domRgb;
+  MyRGB = tmpobj;
 
 
 }
