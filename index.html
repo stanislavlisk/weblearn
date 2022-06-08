@@ -6,52 +6,45 @@
 </head>
 <body>
 
-
-
-
-
-
-<table>
-  <tr>
-    <th>
-
-      <table class="fittable">
-      <tr><td>
-    <button class="button" type="button" style="background-color: rgb(255, 100, 100)" onclick="changeDomRGB('red', 'add')">+red</button>
-    <button class="button" type="button" style="background-color: rgb(100, 255, 100)" onclick="changeDomRGB('green', 'add')">+green</button>
-    <button class="button" type="button" style="background-color: rgb(100, 100, 255)" onclick="changeDomRGB('blue', 'add')">+blue</button>
-     </td></tr>
-     </table>
-
-
-
-    </th>
-  </tr>
+<table class="W400">
   <tr>
     <td>
 
+      <table class="W100">
+        <tr>
+          <td>
 
+            <div class="stretch">
+            <button class="button , W100" type="button" style="background-color: rgb(255, 100, 100)" onclick="changeDomRGB('red', 'add')">+red</button>
+            <button class="button , W100" type="button" style="background-color: rgb(100, 255, 100)" onclick="changeDomRGB('green', 'add')">+green</button>
+            <button class="button , W100" type="button" style="background-color: rgb(100, 100, 255)" onclick="changeDomRGB('blue', 'add')">+blue</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
 
-      <table class="fittable" id= "colchange" ;><tr><td>
-            <p id="demo">COLOR CHANGER</p>
-      </td></tr></table>
+            <table class="stretch" id= "colchange" ;><tr><td>
+                  <p  id="demo" >color</p>
+            </td></tr></table>
 
+          </td>
+        </tr>
+        <tr>
+          <td>
 
+            <div class="stretch">
+            <button class="button , W100" type="button" style="background-color: rgb(100, 0, 0)" onclick="changeDomRGB('red', 'sub')">-red</button>
+            <button class="button , W100" type="button" style="background-color: rgb(0, 100, 0)" onclick="changeDomRGB('green', 'sub')">-green</button>
+            <button class="button , W100" type="button" style="background-color: rgb(0, 0, 100)" onclick="changeDomRGB('blue', 'sub')">-blue</button>
+            </div>
 
-
-    </td>
-  </tr>
-  <tr>
-    <td>
-
-
-      <table class="spectable">
-      <tr><td>
-      <button class="button" type="button" style="background-color: rgb(100, 0, 0)" onclick="changeDomRGB('red', 'sub')">-red</button>
-      <button class="button" type="button" style="background-color: rgb(0, 100, 0)" onclick="changeDomRGB('green', 'sub')">-green</button>
-      <button class="button" type="button" style="background-color: rgb(0, 0, 100)" onclick="changeDomRGB('blue', 'sub')">-blue</button>
-      </td></tr>
+          </td>
+        </tr>
       </table>
+
+
+
 
 
 
@@ -60,6 +53,13 @@
     </td>
   </tr>
 </table>
+
+
+
+
+
+
+
 
 
 </body>

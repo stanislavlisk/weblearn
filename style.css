@@ -1,24 +1,42 @@
+.W100 {
+  width: 100%;
+}
 
+.test {
+  align-items: start;
+}
 
+table {
+  border: 1px solid;
+}
 
 .button {
-  width: auto;
-  border: 1px solid;
+  border: none;
   color: white;
   text-align: center;
+  padding: 5px;
+}
 
-
+.W400 {
+  width: 400px;
 }
 .spectable {
-  border: 1px solid;
   width: 600px;
+  align-items: center;
   align-content: center;
-
 }
 
-.fittable {
+.Alltoc {
+  display: flex;
+  justify-content: center;
+}
+
+.stretch {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
-  border: 1px solid;
-  align-content: center;
-  flex-flow: row wrap;
+}
+
+.text1 {
+  color: white;
 }
