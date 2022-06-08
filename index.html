@@ -4,29 +4,39 @@
 <link rel="stylesheet" href="style.css">
 <script src="learn.js"></script>
 </head>
-
 <body>
 
 
-<p id="demo">COLOR CHANGER</p>
-<button type="button" onclick="changeDomRGB('red', 'add')">+red</button>
-<button type="button" onclick="changeDomRGB('green', 'add')">+green</button>
-<button type="button" onclick="changeDomRGB('blue', 'add')">+blue</button>
+
+<table class="spectable">
+<tr><td>
 
 
+  <table class="fittable">
+  <tr><td>
+<button class="button" type="button" style="background-color: rgb(255, 100, 100)" onclick="changeDomRGB('red', 'add')">+red</button>
+<button class="button" type="button" style="background-color: rgb(100, 255, 100)" onclick="changeDomRGB('green', 'add')">+green</button>
+<button class="button" type="button" style="background-color: rgb(100, 100, 255)" onclick="changeDomRGB('blue', 'add')">+blue</button>
+ </td></tr>
+ </table>
 
-<table id= "colchange" style="width:300px; height:120px; background-color: rgb(0, 0, 0)";>
-  <tr>
-    <td>
+
+</td></tr>
+<tr><td>
+
+<table class="fittable" id= "colchange" ;><tr><td>
+      <p id="demo">COLOR CHANGER</p>
+</td></tr></table>
 
 
-    </td>
-  </tr>
+</td></tr>
+<tr><td>
+<button class="button" type="button" style="background-color: rgb(100, 0, 0)" onclick="changeDomRGB('red', 'sub')">-red</button>
+<button class="button" type="button" style="background-color: rgb(0, 100, 0)" onclick="changeDomRGB('green', 'sub')">-green</button>
+<button class="button" type="button" style="background-color: rgb(0, 0, 100)" onclick="changeDomRGB('blue', 'sub')">-blue</button>
+
+</td></tr>
 </table>
-
-<button type="button" onclick="changeDomRGB('red', 'sub')">+red</button>
-<button type="button" onclick="changeDomRGB('green', 'sub')">+green</button>
-<button type="button" onclick="changeDomRGB('blue', 'sub')">+blue</button>
 
 
 </body>
