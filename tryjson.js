@@ -1,5 +1,8 @@
 ///
 var mydata = JSON.parse(data);
+var mydata2 = JSON.parse(data2);
+
+
 function  printdata() {
   let dat = mydata[1];
   let datString = String(dat);
@@ -11,6 +14,15 @@ function  printdata() {
   document.getElementById("jsontest").innerHTML = datJas;
 }
 
+function printEachName() {
+  let dat = mydata;
+  let list = [];
+  for (let i of dat) {
+    list.push(i['name']);
+    console.log(list);
+    document.getElementById("jsontest").innerHTML = list;
+  }
+}
 
 
 function  myfunc() {
